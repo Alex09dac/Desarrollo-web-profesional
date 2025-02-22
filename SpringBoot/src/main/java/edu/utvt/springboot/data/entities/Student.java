@@ -1,13 +1,19 @@
 package edu.utvt.springboot.data.entities;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "te_students")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class Student {
 
-    @ID
-    @GeneratedValue(strategy = GenerationType.IDENTIFY)
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(nullable = false)
@@ -16,32 +22,4 @@ public class Student {
     @Column(nullable = false)
     private String surname;
 
-    public Student(String name, String surname) {
-        this.name = name;
-        this.surname = surname;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSurname() {
-        return surname;
-    }
-
-    public void setSurname(String surname) {
-        this.surname = surname;
-    }
 }
