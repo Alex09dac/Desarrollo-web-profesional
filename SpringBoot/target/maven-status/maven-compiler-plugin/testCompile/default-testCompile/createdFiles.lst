@@ -1,0 +1,6 @@
+edu\utvt\springboot\CrudTests.class
+edu\utvt\springboot\ApplicationTests.class
+edu\utvt\springboot\InheritanceTests.class
+edu\utvt\springboot\OneToManyTests.class
+edu\utvt\springboot\ManyToManyTests.class
+edu\utvt\springboot\OneToOneTest.class
